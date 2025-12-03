@@ -1,6 +1,6 @@
 {
   "name": "raf-signal",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "Shared requestAnimationFrame scheduler",
   "keywords": [
@@ -20,10 +20,16 @@
     "url": "https://github.com/faizanu94/raf-signal.git"
   },
   "exports": {
-    ".": "./dist/index.js"
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./package.json": "./package.json"
   },
   "main": "./dist/index.js",
+  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "sideEffects": false,
   "license": "MIT",
   "scripts": {
     "build": "tsup",
