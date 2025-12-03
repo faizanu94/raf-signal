@@ -1,6 +1,6 @@
 {
   "name": "raf-signal",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "type": "module",
   "description": "Shared requestAnimationFrame scheduler",
   "keywords": [
@@ -40,5 +40,10 @@
     "tsup": "^8.5.1",
     "typescript": "^5.9.3",
     "vitest": "^4.0.14"
-  }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ]
 }
